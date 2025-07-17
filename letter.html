@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Message</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Letter</title>
   <style>
     body {
       background-color: black;
       color: white;
       font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 60px 20px;
+      padding: 50px 20px;
       line-height: 1.8;
       font-size: 18px;
       font-weight: normal;
       letter-spacing: 0.3px;
       word-spacing: 1px;
       text-align: left;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-    p {
-      margin-bottom: 20px;
+    .content {
+      flex-grow: 1;
     }
     .button {
       margin-top: 40px;
@@ -30,10 +35,9 @@
       font-size: 16px;
       font-weight: bold;
       cursor: pointer;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      align-self: center;
       transition: 0.3s;
+      flex-shrink: 0;
     }
     .button:hover {
       background-color: #32CD32;
@@ -41,15 +45,17 @@
   </style>
 </head>
 <body>
-  <p>Hey...</p>
+  <div class="content">
+    <p>Hey...</p>
 
-  <p>This is an apology (another 😅) for my behavior yesterday. I know there's no excuse or reason for the way I acted yesterday, but I still owe you this.</p>
+    <p>This is an apology (another 😅) for my behavior yesterday. I know there's no excuse or reason for the way I acted yesterday, but I still owe you this.</p>
 
-  <p>I think because I like you so much, I end up acting immaturely and dumping petty things on you. I know I told you I would wait, but I don't want that to make you owe me anything. It's your choice, and I just have to respect that. I just want you to make it last as long as you can. It doesn't matter if there are things that can't be said, I can accept that. It's your space, and I'll respect it.</p>
+    <p>I think because I like you so much, I end up acting immaturely and dumping petty things on you. I know I told you I would wait, but I don't want that to make you owe me anything. It's your choice, and I just have to respect that. I just want you to make it last as long as you can. It doesn't matter if there are things that can't be said, I can accept that. It's your space, and I'll respect it.</p>
 
-  <p>I feel stupid for doing this, it's confusing, this whole situation is new to me, I haven't felt this way before, so I ask you to forgive my actions.</p>
+    <p>I feel stupid for doing this, it's confusing, this whole situation is new to me, I haven't felt this way before, so I ask you to forgive my actions.</p>
 
-  <p>Can you forgive me?</p>
+    <p>Can you forgive me?</p>
+  </div>
 
   <button class="button" onclick="window.location.href='love.html'">Continue</button>
 </body>
